@@ -5,7 +5,7 @@ class Summary extends Component {
         return (
             <section>
                 <header>Summary</header>
-                <section>does other stuff</section>
+               
             </section>
         );
     }

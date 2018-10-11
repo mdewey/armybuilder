@@ -5,7 +5,10 @@ class Resources extends Component {
         return (
             <section>
                 <header>resources</header>
-                <section>does stuff</section>
+                <section className="resources-section">
+                    <span>2500</span>
+                    <span>7</span>
+                </section>
             </section>
         );
     }
