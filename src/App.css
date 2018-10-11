@@ -1,5 +1,13 @@
-.App {
+:root {
+  --main-bg-color: #804e2d;
+  --text-color:#f5e6dc;
+}
+
+
+
+App {
   text-align: center;
+  font-family: Kavoon,cursive;
 }
 
 .App-logo {
@@ -29,4 +37,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.army-app{
+  display: flex;
+  justify-content: space-between
+}
+
+.left, .right{
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  padding:0.5em;
+  margin:0.5em;
+
+}
+
+.army-app>.left{
+  flex:7;
+}
+
+.army-app>.right{
+  flex:1;
+}
+
+.unit{
+  background-color: var(--text-color);
+  color:black;
+  display:flex;
+  justify-content: space-between;
+  padding:1em;
+  margin:0.5em;
+  border-radius: 5px;
+
 }
