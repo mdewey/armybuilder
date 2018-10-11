@@ -11,10 +11,9 @@ class Units extends Component {
                 <header>Army List</header>
                 <section>
                     <ul>
-                        <Unit />
-                        <Unit />
-                        <Unit />
-                        <Unit />
+                        {Object.values(Army).map((unit, i) => {
+                         return  <Unit key={i} {...unit}/>
+                        })}
                     </ul>
                 </section>
             </section>

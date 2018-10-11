@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Unit extends Component {
     render() {
+        console.log(this.props)
         return (
             <li className="unit">
                 <div>
