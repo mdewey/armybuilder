@@ -12,7 +12,7 @@ class Units extends Component {
                 <section>
                     <ul>
                         {Object.values(Army).map((unit, i) => {
-                         return  <Unit key={i} {...unit}/>
+                         return  <Unit key={i} {...unit} increaseCurrentCurrency={this.props.increaseCurrentCurrency} subtractCurrentCurrency={this.props.subtractCurrentCurrency}/>
                         })}
                     </ul>
                 </section>

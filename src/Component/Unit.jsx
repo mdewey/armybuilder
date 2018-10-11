@@ -13,6 +13,8 @@ class Unit extends Component {
         // increase the unit by 1
         this.setState({
             unitCount: this.state.unitCount + 1
+        }, () => {
+            this.props.subtractCurrentCurrency(this.props.cost)
         })
     }
     handleDownClick = () => {
@@ -21,6 +23,8 @@ class Unit extends Component {
             // decrease the unit by 1
             this.setState({
                 unitCount: this.state.unitCount - 1
+            }, () => {
+                this.props.increaseCurrentCurrency(this.props.cost)
             })
         }
 
