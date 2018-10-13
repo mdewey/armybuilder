@@ -7,7 +7,7 @@ class Resources extends Component {
                 <header>resources</header>
                 <section className="resources-section">
                     <span>{this.props.currency}</span>
-                    <span>7</span>
+                    <span>{this.props.allowedTroops}</span>
                 </section>
             </section>
         );
